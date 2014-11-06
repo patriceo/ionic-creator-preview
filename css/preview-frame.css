@@ -1,0 +1,15 @@
+.bar.bar-header {
+  height: 64px;
+}
+.bar.bar-header > * {
+  margin-top: 20px !important;
+}
+.has-header {
+  top: 64px !important;
+}
+
+body.android {
+}
+
+body.ios {
+}

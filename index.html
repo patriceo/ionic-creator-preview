@@ -1,0 +1,53 @@
+<html>
+	<head>
+
+		<script type="text/javascript"> 
+			function loadTemplate() {
+				document.getElementById('ionicCreatorFrame').src = "/creator/" +creatorId.value;
+			};
+		</script>
+
+		<style>
+			body {
+				padding: 10px;
+				text-align: center;
+			}
+
+			.ipad {
+				position:absolute; 
+				left:100px; 
+				top:100px;
+			}
+
+			.preview-frame {
+				position:absolute; 
+				left:221px; 
+				top:222px; 
+				width:543px; 
+				height:401px; 
+			}
+
+			.menu {
+				background-color: lightgrey;
+				border: 1px solid black;
+				padding: 10px;
+				margin: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<span class="menu">
+			Ionic Creator Id : 
+			<input id="creatorId"></input> 
+			<a href="javascript:loadTemplate()">Load template !</a>
+		</span>
+		
+		<br/>
+		
+		<div>
+			<img class="ipad" src="/ipad.png" />
+			<iframe id="ionicCreatorFrame" src="" class="preview-frame"></iframe>
+		</div>
+	</body>
+</html>
